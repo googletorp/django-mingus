@@ -27,6 +27,15 @@ h2 a:hover, #nav a:hover { color: #8C8702;}
 /* styles overwrites */
 h2 { font-weight: 200;}
 
+.post .date, .quote .date, .bookmark .date {
+  background-color: #E6D085;
+  color: #5B5701;
+}
+
+.post .teaser {
+  border-bottom: 1em solid #E6D085;
+}
+
 /* category detail */
 h2.filter-title {
   background-color: #E6D085;
