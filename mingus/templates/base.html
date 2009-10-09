@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="{{ STATIC_URL }}css/960.css" type="text/css" media="all">
     <link rel="stylesheet" href="{{ STATIC_URL }}css/pygments.css" type="text/css" media="all">
     <link rel="stylesheet" href="{{ STATIC_URL }}css/base.css" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/themes/basic.css" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/themes/googletorp.css" type="text/css" media="all">
     {% endcompress %}
 
     <!--[if IE 6]>
@@ -161,6 +161,7 @@
       {% endif %}
       {% endcache %}
 
+      {% comment %}
       {% cache 3600 "delicious.popular" %}
       {% parse_feed 'http://feeds.delicious.com/v2/rss/tag/django?count=15' as items %}
       <h4>{% trans "Django Popular" %}</h4>
@@ -170,6 +171,7 @@
       {% endfor %}
       </ul>
       {% endcache %}
+      {% endcomment %}
 
     </div>
     <!-- /grid_6 -->
