@@ -41,3 +41,13 @@ h2.filter-title {
   background-color: #E6D085;
   color: #5B5701;
 }
+
+/* code inline styles */
+code.inline {
+  background-color: #EEEEEE;
+}
+
+/* javascript styles */
+.highlight pre{
+  background-color: #EEEEEE;
+}
