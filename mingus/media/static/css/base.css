@@ -43,7 +43,7 @@ body {
 }
 
 /* LAYOUT */
-#body-container{ padding-top: 22px; }
+#body-container { padding-top: 22px; }
 
 .post, .bookmark, .quote { margin-bottom: 1.2em; }
 
@@ -115,9 +115,19 @@ body {
 ul.recent-posts li, .post li
 {
     list-style: disc;
-    left-margin: 1.2em;
     list-style-position: inside;
     color: #333940;
+}
+
+.post .body ol,
+.post .body ul {
+    margin-left: 0;
+}
+
+.post .body li {
+    color: inherit;
+    list-style-position: outside;
+    margin-left: 0;
 }
 
 .bookmark p{ margin-top: .8em;}
@@ -141,9 +151,8 @@ label
 
 
 /* CODE */
-pre
+pre 
 {
-  overflow: auto;
   overflow: auto;
   z-index: 0;
   background-color: #fff;
@@ -211,7 +220,7 @@ ul.navbar-one li
 
 #footer p{ margin-left: 1.6em; padding-bottom: 1.8em; }
 
-/* TYPE BASE */
+/* TYPE BASE */              
 p, ul, ol, pre { font-size: 1em; margin: 0 0 0.6em; }
 
 ul, ol { margin-left: 1.4em; }
@@ -230,6 +239,11 @@ h4 { font-size: 0.875em; }
 
 p, li { font-size: .9em; line-height: 1.4em;}
 
+blockquote {
+  border-left: 1px solid #ccc;
+  padding-left: 0.5em;
+}
+
 /* TYPE SPECIFIC */
 .post .teaser{
     font-size: 1.1em;
@@ -242,9 +256,9 @@ p, li { font-size: .9em; line-height: 1.4em;}
 
 ul.navbar-one li
 {
-  font-size: .9em;
-  text-decoration: none;
-  color: #999ca0;
+	font-size: .9em;
+	text-decoration: none; 
+	color: #999ca0;
 }
 
 pre{ color: #333940; }
